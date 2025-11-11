@@ -1,30 +1,40 @@
+//Referencing the ID and classes
 
-// Step 1: create a const variable for the hex
+let body = document.querySelector('body');
 
-const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+let colorName = document.querySelector('.color-name');
 
-
-// Step 2: target button and color names
-
-const button = document.getElementById('button');
-const color = document.querySelector('.color');
+const  getColor = document.querySelector('#btn');
 
 
-// Step 3: create event listener, function, loop for button click
 
-button.addEventListener('click', function() {
+// Setting mixture of letters and numbers array 
 
-let hexColor = '#';
+const hexColor = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
 
+
+ 
+ 
+ 
+ 
+ 
+getColor.addEventListener('click', function () {
+ let colors = '#';
+ 
+ for (i = 0; i < 6; i++){
+ 
+ let randomNumber = Math.floor(Math.random() * hexColor.length);
+ 
+     
+  colors += hexColor[randomNumber];
+ 
+ };
+ 
+ 
+ document.body.style.backgroundColor = colors;
   
-for (i = 0; i < 6; i++) {
-
-const randomNumber = Math.floor(Math.random() * hex.length);
-
- hexColor += hex[randomNumber];
-  }
+  colorName.textContent = colors;
   
-  document.body.style.backgroundColor = hexColor;
-  
-  color.textContent = hexColor;
+    
 });
+

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    background-color: whitesmoke;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    color: white;
+    border: none;
+}
+
+
+h1 {
+    margin-left: 10px;
+    font-family: "Montserrat", sans-serif;
+    color: goldenrod;
+    
+}
+
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 15px;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+li {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+a:hover {
+    color: gold;
+}
+
+a:active {
+    color: gold;
+}
+
+li:hover {
+    color: gold;
+}
+
+li:active {
+    color: gold;
+}
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bg-color {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 22px;;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 150px; 
+}
+
+.btn-container {
+display: flex;
+flex-direction: row;
+gap: 30px;
+margin-top: 50px;
+margin-bottom: 300px;
+    
+}
+
+button {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    padding: 15px;
+    
+}
+
+footer {
+    margin-bottom: 0;
+    color: navy;
+}
+
+
